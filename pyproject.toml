@@ -1,0 +1,25 @@
+[project]
+name = "multi-model-rag-demo"
+version = "0.1.0"
+description = "多模型 RAG 工作流示例（LangGraph + Milvus 混合检索 + RAGAS 评估）"
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph",
+    "langchain",
+    "langchain-core",
+    "langchain-openai",
+    "ragas",
+    "openai",
+    "pymilvus",
+    "dashscope",
+    "zai",
+    "python-dotenv",
+    "pydantic",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+packages = []
