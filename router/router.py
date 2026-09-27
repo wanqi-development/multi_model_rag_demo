@@ -61,7 +61,7 @@ def need_human_approval_router(state: GraphRagState) -> str:
     """
     precision = state["precision"]
     if precision < 0.8:
-        return "human_interrupt_retrieve_tool_node"
+        return "human_approve_node"
     else:
         return "__end__"
 
